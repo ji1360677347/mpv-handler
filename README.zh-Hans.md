@@ -96,7 +96,7 @@ referrer = [ Encoded URL ]
      $ chmod +x $HOME/.local/bin/mpv-handler
      ```
 
-7. 注册 xdg-mime（感谢 [linuxuprising][linuxuprising] 的提醒）
+7. 注册 xdg-mime（感谢 [linuxuprising][linuxuprising] 和 [muse90673#122][muse90673]）
    - ```
      $ xdg-mime default mpv-handler.desktop x-scheme-handler/mpv-handler
      $ xdg-mime default mpv-handler-debug.desktop x-scheme-handler/mpv-handler-debug
@@ -152,3 +152,4 @@ proxy = "http://example.com:8080"
 [download-windows]: https://github.com/akiirui/mpv-handler/releases/latest/download/mpv-handler-windows-amd64.zip
 [greasyfork-play-with-mpv]: https://greasyfork.org/scripts/416271-play-with-mpv
 [linuxuprising]: https://www.linuxuprising.com/2021/07/open-youtube-and-more-videos-from-your.html
+[muse90673]: https://github.com/akiirui/mpv-handler/issues/122
