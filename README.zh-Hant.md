@@ -92,16 +92,15 @@ referrer = [ Encoded URL ]
 4. 複製 `mpv-handler.desktop` 至 `$HOME/.local/share/applications/`
 5. 複製 `mpv-handler-debug.desktop` 至 `$HOME/.local/share/applications/`
 6. 爲二進制文件設置可執行權限
-
    - ```
      $ chmod +x $HOME/.local/bin/mpv-handler
      ```
 
 7. 註冊 xdg-mime（感謝 [linuxuprising][linuxuprising] 的提醒）
-
    - ```
      $ xdg-mime default mpv-handler.desktop x-scheme-handler/mpv-handler
      $ xdg-mime default mpv-handler-debug.desktop x-scheme-handler/mpv-handler-debug
+     $ update-desktop-database $HOME/.local/share/applications/
      ```
 
 8. 添加 `$HOME/.local/bin` 到環境變量 `PATH`

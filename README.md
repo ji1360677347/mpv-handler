@@ -92,16 +92,15 @@ referrer = [ Encoded URL ]
 4. Copy `mpv-handler.desktop` to `$HOME/.local/share/applications/`
 5. Copy `mpv-handler-debug.desktop` to `$HOME/.local/share/applications/`
 6. Set executable permission for binary
-
    - ```
      $ chmod +x $HOME/.local/bin/mpv-handler
      ```
 
 7. Register xdg-mime (thanks for the [linuxuprising][linuxuprising] reminder)
-
    - ```
      $ xdg-mime default mpv-handler.desktop x-scheme-handler/mpv-handler
      $ xdg-mime default mpv-handler-debug.desktop x-scheme-handler/mpv-handler-debug
+     $ update-desktop-database $HOME/.local/share/applications/
      ```
 
 8. Add `$HOME/.local/bin` to your environment variable `PATH`
